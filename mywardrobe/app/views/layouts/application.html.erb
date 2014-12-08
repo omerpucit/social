@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mywardrobe</title>
+    <%= stylesheet_link_tag "http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" %>
+    <%= stylesheet_link_tag "bootstrap.css" %>
+  <%= stylesheet_link_tag "bootstrap.min.css" %>
+    <%= stylesheet_link_tag "morris-0.4.3.min.css" %>
+    <%= stylesheet_link_tag "animate.css" %>
+    <%= stylesheet_link_tag "style.css" %>
+    <%= stylesheet_link_tag "jquery.fancybox.css" %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+    <script>
+        $(document).ready(function() {
+            $('.fancybox').fancybox({
+                openEffect	: 'none',
+                closeEffect	: 'none'
+            });
+        });
+    </script>
+    <script>
+        $("#popover").popover({ trigger:"hover")};
+    </script>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>
